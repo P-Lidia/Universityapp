@@ -7,18 +7,17 @@ import ru.plidia.university.util.*;
 
 public class _Main {
     public static void main(String[] args) {
-        Professor professor = new Professor();
-        Student student = new Student();
-        University university = new University();
+        University university = new University("МГТУ им. Н.Э. Баумана");
+        Professor professor = new Professor("Василий Петрович", "Васильцов", university);
+        Student student = new Student("Алексей", 304, "технологии машиностроения", professor, university);
         Come come = new Come();
         Learn learn = new Learn();
         Teach teach = new Teach();
-
         come.comeToUniversity(student);
         learn.learnInUniversity(student);
         StudentStudy.learnMath(student);
         StudentStudy.learnPhysics(student);
-
+        System.out.println("---------------------------------------------");
         come.comeToUniversity(professor);
         teach.teachInUniversity(professor);
         ProfessorWork.teachMechanics(professor);

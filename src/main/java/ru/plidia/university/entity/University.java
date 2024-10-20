@@ -4,7 +4,7 @@ public class University {
 
     private String universityName;
 
-    public void setUniversityName(String universityName) {
+    public University(String universityName) {
         this.universityName = universityName;
     }
 
