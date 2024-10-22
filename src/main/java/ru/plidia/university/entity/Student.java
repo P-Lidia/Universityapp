@@ -24,7 +24,7 @@ public class Student implements Comeable, Learnable {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setGroup(int group) {
@@ -32,15 +32,15 @@ public class Student implements Comeable, Learnable {
     }
 
     public int getGroup() {
-        return this.group;
+        return group;
     }
 
     public void setFaculty(String faculty) {
         this.faculty = faculty;
     }
 
-    public String getFaculry() {
-        return this.faculty;
+    public String getFaculty() {
+        return faculty;
     }
 
     public void setUniversity(University university) {
@@ -48,7 +48,7 @@ public class Student implements Comeable, Learnable {
     }
 
     public University getUniversity() {
-        return this.university;
+        return university;
     }
 
     public void setProfessor(Professor professor) {
@@ -56,7 +56,7 @@ public class Student implements Comeable, Learnable {
     }
 
     public Professor getProfessor() {
-        return this.professor;
+        return professor;
     }
 
     @Override

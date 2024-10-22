@@ -5,6 +5,7 @@ public class Professor implements Comeable, Teachable {
     private String name;
     private String surname;
     private University university;
+    private Student student;
 
     public Professor(String name, String surname, University university) {
         this.name = name;
@@ -13,15 +14,19 @@ public class Professor implements Comeable, Teachable {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public String getSurname() {
-        return this.surname;
+        return surname;
+    }
+
+    public Student getStudent() {
+        return student;
     }
 
     public University getUniversity() {
-        return this.university;
+        return university;
     }
 
     @Override

@@ -1,5 +1,6 @@
 package ru.plidia.university.util;
 
+import ru.plidia.university.entity.Learnable;
 import ru.plidia.university.entity.Teachable;
 
 public class ProfessorWork {
