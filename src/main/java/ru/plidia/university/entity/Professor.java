@@ -21,12 +21,8 @@ public class Professor implements Comeable, Teachable {
         return surname;
     }
 
-    public Student getStudent() {
-        return student;
-    }
-
-    public University getUniversity() {
-        return university;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
     @Override
@@ -42,5 +38,6 @@ public class Professor implements Comeable, Teachable {
 
     private void introduce() {
         System.out.println("Здравствуйте. Меня зовут " + surname + " " + name + ". Я работаю в " + university.getUniversityName() + ".");
+        System.out.println(student.getName() + " из группы " + student.getGroup() + " - мой лучший студент");
     }
 }
