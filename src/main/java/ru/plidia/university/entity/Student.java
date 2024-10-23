@@ -27,30 +27,6 @@ public class Student implements Comeable, Learnable {
         return group;
     }
 
-    public void setFaculty(String faculty) {
-        this.faculty = faculty;
-    }
-
-    public String getFaculty() {
-        return faculty;
-    }
-
-    public void setUniversity(University university) {
-        this.university = university;
-    }
-
-    public University getUniversity() {
-        return university;
-    }
-
-    public void setProfessor(Professor professor) {
-        this.professor = professor;
-    }
-
-    public Professor getProfessor() {
-        return professor;
-    }
-
     @Override
     public String come() {
         introduce();
