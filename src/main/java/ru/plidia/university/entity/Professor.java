@@ -13,8 +13,16 @@ public class Professor implements Comeable, Teachable {
         this.university = university;
     }
 
+    private void setName(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getSurname() {
@@ -23,6 +31,18 @@ public class Professor implements Comeable, Teachable {
 
     public void setStudent(Student student) {
         this.student = student;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setUniversity(University university) {
+        this.university = university;
+    }
+
+    public University getUniversity() {
+        return university;
     }
 
     @Override
